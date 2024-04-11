@@ -1,0 +1,16 @@
+{
+  "name" : "project42dodging",
+  "blockingStat" : "",
+
+  "effectConfig" : {},
+  "defaultDuration" : 0.1,
+
+  "scripts" : [
+    "project42dodging.lua"
+  ],
+
+  "animationConfig" : "project42dodging.animation",
+
+  "label" : "Invincible.",
+  "icon" : "/interface/statuses/project42_dodging.png"
+}

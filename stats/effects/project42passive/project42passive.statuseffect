@@ -1,0 +1,18 @@
+{
+  "name" : "project42passive",
+  "effectConfig" : {
+    "healthRate" : 0.05,
+    "energyRate" : 0.175,
+    "fallDamageMultiplier": 0.1
+  },
+  "defaultDuration" : 0.1,
+
+  "scripts" : [
+    "project42passive.lua"
+  ],
+
+  "animationConfig" : "project42passive.animation",
+
+  "label" : "Regeneration, Fall Damage Mitigation",
+  "icon" : "/interface/statuses/project42_passive.png"
+}

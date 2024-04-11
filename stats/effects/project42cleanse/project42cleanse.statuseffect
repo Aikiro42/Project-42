@@ -1,0 +1,14 @@
+{
+  "name" : "project42cleanse",
+  "blockingStat" : "project42cleanse",
+
+  "effectConfig" : {},
+  "defaultDuration" : 7,
+
+  "scripts" : [
+    "project42cleanse.lua"
+  ],
+
+  "label" : "Status cleanse is on cooldown.",
+  "icon" : "/interface/statuses/project42_cleanse.png"
+}

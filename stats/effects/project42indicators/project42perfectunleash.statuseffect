@@ -1,0 +1,11 @@
+{
+  "name" : "project42perfectunleash",
+  "blockingStat" : "project42perfectunleash",
+
+  "effectConfig" : {},
+  "defaultDuration" : 0.01,
+
+  "icon": "/interface/statuses/project42_perfectunleash.png",
+  "label": "Unleash right after charging to deal more damage!"
+
+}

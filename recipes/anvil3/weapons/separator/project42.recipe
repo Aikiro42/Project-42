@@ -1,0 +1,13 @@
+{
+    "input": [
+        {"item": "soluskatana", "count": 1},
+        {"item": "gravityaugment", "count": 1},
+        {"item": "healingaugment3", "count": 1},
+        {"item": "energyaugment3", "count": 1},
+        {"item": "mobilityaugment", "count": 1},
+        {"item": "damageaugment3", "count": 1}
+    ],
+    "output": {"item": "project42", "count": 1},
+    "groups" : [ "craftingseparator", "weapons", "all" ]
+
+}

@@ -1,0 +1,11 @@
+{
+  "name" : "project42datsu",
+  "blockingStat" : "",
+
+  "effectConfig" : {},
+  "defaultDuration" : 0.1,
+
+  "scripts": ["project42datsu.lua"],
+  "animationConfig": "project42datsu.animation"
+
+}

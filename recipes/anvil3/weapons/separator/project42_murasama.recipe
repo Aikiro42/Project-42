@@ -1,0 +1,34 @@
+{
+    "input": [
+        {"item": "project42", "count": 2},
+        {"item": "essence", "count": 2013}
+    ],
+    "output": {
+        "parameters": {
+            "shortdescription": "^#FF5050;Broken Memories",
+            "category": "^#f5b642;Unspoken Truth",
+            "samRodriguez": true,
+            "description": "The bloodshed will be realized; your reflection confirms it.",
+            "inventoryIcon": "/items/active/weapons/melee/broadsword/murasama_icon.png",
+            "upgraded": true,
+            "level": 6,
+            "animationParts": {
+                "blade": "/items/active/weapons/melee/broadsword/murasama_blade.png",
+                "handle": "/items/active/weapons/melee/broadsword/murasama_handle.png"
+            },
+            "activeTime": 3,
+            "rebladeHealthCostRate": 0,
+            "primaryAbility": {
+                "heavyProjectiles": [
+                    "travelingflurry"
+                ],
+                "heavyProjectileParameters": {
+                    "power": 4
+                }
+            }
+        },
+        "item": "project42",
+        "count": 1},
+    "groups" : [ "treasuredtrophies", "craftingseparator", "weapons", "all" ]
+
+}

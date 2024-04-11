@@ -1,0 +1,13 @@
+{
+  "name" : "project42energylockdamageboost",
+  "blockingStat" : "project42energylockdamageboost",
+  "scripts": ["project42energylockdamageboost.lua"],
+
+  "effectConfig" : {},
+  "defaultDuration" : 60,
+  "powerModifier": 1.25,
+  "protectionModifier": 0.8,
+
+  "label" : "Out of energy: Vulnerable, but damage is boosted.",
+  "icon" : "/interface/statuses/project42_energylockdamageboost.png"
+}

@@ -1,0 +1,27 @@
+{
+  "projectileName" : "deniedfateproj",
+  "image" : "deniedfateproj.png",
+  "physics": "laser",
+  "pointLight": true,
+  "power": 15,
+  "animationCycle" : 0.3,
+  "frameNumber" : 4,
+  "speed" : 150,
+  "orientationLocked" : false,
+  "damagePoly" : [[0,1], [1,1], [1,4],[0,4]],
+  "animationLoops" : false,
+  "piercing" : false,
+  "bounces" : 3,
+  "flippable" : true,
+  "damageKind" : "standardbullet",
+  "damageType": "IgnoresDef",
+  "emitters" : [ ],
+  "lightColor" : [100, 25, 25],
+  "fullbright" : true,
+  "statusEffects" : [],
+  "knockback" : 15,
+  "knockbackDirectional" : true,
+  "movementSettings":{
+    "collisionEnabled": true
+  }
+}

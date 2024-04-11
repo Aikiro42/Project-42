@@ -1,0 +1,12 @@
+{
+  "name" : "project42healthdamageboost",
+  "blockingStat" : "project42healthdamageboost",
+  "scripts": ["project42healthdamageboost.lua"],
+
+  "effectConfig" : {},
+  "defaultDuration" : 60,
+  "maxPowerModifier": 2,
+
+  "label" : "Damage is increased based on missing health.",
+  "icon" : "/interface/statuses/project42_healthdamageboost.png"
+}

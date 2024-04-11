@@ -1,0 +1,10 @@
+{
+  "version" : "1.0.2",
+  "tags" : "Weapons|Cheats and God Items|In-Game Tools|Mechanics",
+  "author" : "Aikiro42",
+  "description" : "v1.0.2 hotfix: forgor to remove a debug line that heals all your health every moment.",
+  "name" : "project42",
+  "friendlyName" : "Project 42",
+  "steamContentId" : "2858362793",
+  "link" : "steam://url/CommunityFilePage/2858362793"
+}

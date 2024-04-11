@@ -1,0 +1,118 @@
+{
+	"itemName": "project42",
+	"description": "Wield your blood to alter fate.",
+	"shortdescription": "^#FF5555;Project 42",
+	"twoHanded": true,
+	"inventoryIcon": "/items/active/weapons/melee/broadsword/project42_icon.png",
+	"animationParts": {
+		"blade": "/items/active/weapons/melee/broadsword/project42_blade.png",
+		"handle": "/items/active/weapons/melee/broadsword/project42_handle.png"
+	},
+	"animationScripts" : [
+		"/items/active/weapons/melee/broadsword/project42animation.lua"
+	],
+
+	"level": 4,
+	"price": 15,
+	"maxStack": 1,
+	"rarity": "Legendary",
+	"tooltipKind": "base",
+	"category": "Katana",
+	"itemTags": ["weapon", "melee", "broadsword", "upgradeableWeapon", "katana" ],
+	"upgradeParameters": {
+		"shortdescription": "^#FF5555;Project 42 ^#FCA400;X",
+		"upgraded": true,
+		"level": 6,
+		"inventoryIcon": "/items/active/weapons/melee/broadsword/project42_iconl6.png",
+		"animationParts":{
+			"handle": "/items/active/weapons/melee/broadsword/project42_handlel6.png",
+			"blade": "/items/active/weapons/melee/broadsword/project42_blade.png"
+		},
+		"primaryAbility":{
+
+			"perfectParryChannelEnergyRate": 0.1,
+			"perfectParryEnergyUsageRate": 0.5,
+
+			"comboDecay": 0.25,
+			"comboDuration": 2,
+			"comboLimit": 42,
+
+			"critChanceCap": 0.5,
+			"critMult": 1.5,
+
+			"energyDamageScaling": 0.25
+		},
+		"altAbility": {
+			"energyUsageRate": 0.1,
+			"energyDamageScaling": 0.15
+		},
+		"dodgeCleanseCooldown": 7,
+		"rebladeHealthCostRate": 0.05
+	},
+	"upgraded": false,
+  	"animation" : "/items/active/weapons/melee/broadsword/project42combo.animation",
+	"animationCustom": {
+		"animatedParts": {
+			"parts": {
+				"swoosh": {
+					"properties": {
+						"fullbright": true
+					}
+				}
+			}
+		},
+		"particleEmitters":{
+			"dodgeParticles":{
+				"emissionRate" : 40,
+				"transformationGroups" : ["weapon"],
+				"particles" : [
+				  { "particle" : "project42dodge"}
+				]
+			}
+		}
+	},
+
+	"scripts" : [
+		"/items/active/weapons/melee/project42weapon.lua"
+	],
+	"activeTime": 0.1,
+
+	"dodgeTime": 0.15,
+	"dodgeSpeed": 60,
+	"dodgeTriggerTime": 0.5,
+	"dodgeCooldown": 0.2,
+	"dodgeCleanseCooldown": 8,
+	"dodgeEnergyRate": 0.05,
+	"dodgeEndXVelocityFactor": 0.75,
+	"dodgeIFrameLinger": 0.1,
+
+	"walkEnergyRegenRate": 0.175,
+	"walkHealthRegenRate": 0.05,
+	"walkFallDamageMultiplier": 0.1,
+
+	"displayText": true,
+	"textOffset": [0, 1.95],
+	"textColor": [255, 73, 10],
+	"textShake": 0.1,
+	"textHealthThreshold": 0.75,
+
+	"lifestealRate": 0.01,
+	"critLifestealMult": 10,
+	"critLifeThreshold": 0.3,
+
+    "movementSpeedFactor": 1.75,
+    "jumpHeightFactor": 1.5,
+
+	"rebladeHealthCostRate": 0.1,
+
+	"elementalType": "physical",
+
+	"primaryAbilityType": "project42combo",
+	"altAbilityType": "fatedslash",
+	
+	"builder": "/items/buildscripts/buildunrandweapon.lua",
+	
+	"paletteSwaps": "",
+	
+	"damageLevelMultiplier": 2
+	}

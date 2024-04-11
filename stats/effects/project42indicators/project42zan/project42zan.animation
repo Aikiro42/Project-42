@@ -1,0 +1,14 @@
+{
+    "particleEmitters" : {
+      "zan" : {
+        "emissionRate" : 1,
+        "particles" : [
+          {
+            "particle" : "project42zan"
+          }
+        ]
+      }
+    },
+    "sounds" : {}
+  }
+  

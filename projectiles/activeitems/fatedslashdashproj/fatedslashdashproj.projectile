@@ -1,0 +1,26 @@
+{
+  "projectileName" : "fatedslashdashproj",
+  "image" : "fatedslashdashproj.png",
+  "scripts": ["fatedslashdashproj.lua"],
+  "power": 15,
+  "animationCycle" : 0.3,
+  "timeToLive" : 0.3,
+  "frameNumber" : 4,
+  "speed" : 150,
+  "orientationLocked" : true,
+  "damagePoly" : [[0,3], [22,0], [0,-3],[-50, 0]],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "damageKind" : "slash",
+  "emitters" : [],
+  "lightColor" : [125, 0, 0],
+  "fullbright" : true,
+  "statusEffects" : [],
+  "knockback" : 15,
+  "knockbackDirectional" : true,
+  "movementSettings":{
+    "collisionEnabled": false
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "kind" : "project42readyglint",
+    "definition" : {
+      "type" : "textured",
+      "image" : "/particles/project42readyglint/project42readyglint.png",
+      "size" : 1,
+      "color" : [255, 255, 255],
+      "light" : [128, 128, 128],
+      "position" : [0, 0],
+      "destructionAction" : "shrink",
+      "destructionTime" : 0.1,
+      "fade" : 0.5,
+      "layer" : "front",
+      "fullbright" : true,
+      "timeToLive" : 0.01,
+      "variance" : {
+        "size" : 0.5,
+        "rotation" : 180,
+        "angularVelocity" : 180
+      }
+    }
+  }
+  

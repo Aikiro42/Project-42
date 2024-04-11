@@ -1,0 +1,10 @@
+{
+  "name" : "project42perfectparry",
+  "blockingStat" : "project42perfectparry",
+
+  "effectConfig" : {},
+  "defaultDuration" : 1,
+
+  "label" : "Deflecting attacks costs no energy.",
+  "icon" : "/interface/statuses/project42_perfectparry.png"
+}

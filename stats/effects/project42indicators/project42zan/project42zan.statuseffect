@@ -1,0 +1,11 @@
+{
+  "name" : "project42zan",
+  "blockingStat" : "",
+
+  "effectConfig" : {},
+  "defaultDuration" : 0.1,
+
+  "scripts": ["project42zan.lua"],
+  "animationConfig": "project42zan.animation"
+
+}

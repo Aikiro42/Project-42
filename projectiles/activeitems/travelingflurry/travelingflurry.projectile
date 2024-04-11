@@ -1,0 +1,71 @@
+{
+  "projectileName" : "travelingflurry",
+  "image" : "travelingflurry.png",
+  "animationCycle" : 0.25,
+  "timeToLive" : 1.5,
+  "frameNumber" : 7,
+  "speed" : 25,
+  "orientationLocked" : false,
+  "damagePoly" : [
+    [37.50, 0.00],
+    [32.48, 18.75],
+    [18.75, 32.48],
+    [0.00, 37.50],
+    [-18.75, 32.48],
+    [-32.48, 18.75],
+    [-37.50, 0.00],
+    [-32.48, -18.75],
+    [-18.75, -32.48],
+    [-0.00, -37.50],
+    [18.75, -32.48],
+    [32.48, -18.75]
+  ],
+  "persistentAudio": "/sfx/melee/sword_superspinslash.ogg",
+  "movementSettings":{
+    "collisionEnabled": true
+  },
+  "damageRepeatTimeout": 0.075,
+  "animationLoops" : true,
+  "piercing" : true,
+  "bounces" : 0,
+  "flippable" : false,
+  "damageKind" : "impact",
+  "emitters" : [],
+  "lightColor" : [120, 50, 50],
+  "fullbright" : true,
+  "statusEffects" : [],
+  "knockback" : 10,
+  "knockbackDirectional" : true,
+  "periodicActions" : [
+    {
+      "action" : "particle",
+      "specification" : "project42particle1",
+      "time" : 0.05,
+      "repeat" : true
+    },
+    {
+      "action" : "particle",
+      "specification" : "project42particle2",
+      "time" : 0.05,
+      "repeat" : true
+    },
+    {
+      "action" : "particle",
+      "specification" : "project42particle1",
+      "time" : 0.05,
+      "repeat" : true
+    },
+    {
+      "action" : "particle",
+      "specification" : "project42particle2",
+      "time" : 0.05,
+      "repeat" : true
+    }
+  ],
+  "actionOnReap": [
+    {
+      "action": "config",
+      "file": "/projectiles/explosions/project42_hitexplosion/project42_hitexplosion.config"
+    }
+  ]
+}

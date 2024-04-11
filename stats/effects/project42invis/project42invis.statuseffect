@@ -1,0 +1,11 @@
+{
+  "name" : "project42invis",
+  "effectConfig" : {
+    "alpha" : 0
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "project42invis.lua"
+  ]
+}

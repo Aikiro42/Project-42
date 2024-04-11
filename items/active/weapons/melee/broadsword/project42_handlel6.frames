@@ -1,0 +1,9 @@
+{
+  "frameGrid" : {
+    "size" : [27, 44],
+    "dimensions" : [8, 1],
+    "names" : [
+      ["noblade.1", "noblade.2", "noblade.3", "noblade.4", "noblade.5", "noblade.6", "noblade.7", "noblade.8"]
+    ]
+  }
+}

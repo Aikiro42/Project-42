@@ -1,0 +1,72 @@
+{
+  "projectileName" : "challengingfateproj",
+  "image" : "challengingfateproj.png",
+  "scripts": ["challengingfateproj.lua"],
+  "physics": "laser",
+  "animationCycle" : 0.1,
+  "timeToLive" : 1.5,
+  "frameNumber" : 8,
+  "speed" : 100,
+  "orientationLocked" : false,
+  "persistentAudio": "/sfx/melee/sword_spinslash.ogg",
+  "damagePoly" : [
+    [18.50, 0.00],
+    [16.02, 9.25],
+    [9.25, 16.02],
+    [0.00, 18.50],
+    [-9.25, 16.02],
+    [-16.02, 9.25],
+    [-18.50, 0.00],
+    [-16.02, -9.25],
+    [-9.25, -16.02],
+    [-0.00, -18.50],
+    [9.25, -16.02],
+    [16.02, -9.25]
+  ],
+  "movementSettings":{
+    "collisionEnabled": true
+  },
+  "animationLoops" : true,
+  "piercing" : true,
+  "bounces" : 0,
+  "flippable" : false,
+  "damageKind" : "impact",
+  "emitters" : [],
+  "lightColor" : [120, 50, 50],
+  "fullbright" : true,
+  "statusEffects" : [],
+  "knockback" : 10,
+  "knockbackDirectional" : true,
+  "periodicActions" : [
+    {
+      "action" : "particle",
+      "specification" : "project42particle1",
+      "time" : 0.05,
+      "repeat" : true
+    },
+    {
+      "action" : "particle",
+      "specification" : "project42particle2",
+      "time" : 0.05,
+      "repeat" : true
+    },
+    {
+      "action" : "particle",
+      "specification" : "project42particle1",
+      "time" : 0.05,
+      "repeat" : true
+    },
+    {
+      "action" : "particle",
+      "specification" : "project42particle2",
+      "time" : 0.05,
+      "repeat" : true
+    }
+  ],
+  "actionOnReap": [
+    {
+      "action": "config",
+      "file": "/projectiles/explosions/project42_hitexplosion/project42_hitexplosion.config"
+    }
+  ]
+}

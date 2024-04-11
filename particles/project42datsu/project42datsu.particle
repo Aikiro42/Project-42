@@ -1,0 +1,17 @@
+{
+    "kind" : "project42datsu",
+    "definition" : {
+      "type" : "textured",
+      "image" : "/particles/project42datsu/project42datsu.png",
+      "size" : 1,
+      "light" : [128, 8, 0],
+      "position" : [0, 0],
+      "destructionAction" : "fade",
+      "destructionTime" : 0.5,
+      "fade" : 0.5,
+      "layer" : "front",
+      "fullbright" : true,
+      "timeToLive" : 0.01
+    }
+  }
+  

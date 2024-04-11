@@ -1,0 +1,14 @@
+{
+    "particleEmitters" : {
+      "datsu" : {
+        "emissionRate" : 1,
+        "particles" : [
+          {
+            "particle" : "project42datsu"
+          }
+        ]
+      }
+    },
+    "sounds" : {}
+  }
+  

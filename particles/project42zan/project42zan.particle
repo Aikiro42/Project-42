@@ -1,0 +1,17 @@
+{
+    "kind" : "project42zan",
+    "definition" : {
+      "type" : "textured",
+      "image" : "/particles/project42zan/project42zan.png",
+      "size" : 1,
+      "light" : [128, 8, 0],
+      "position" : [0, 0],
+      "destructionAction" : "fade",
+      "destructionTime" : 0.25,
+      "fade" : 0.25,
+      "layer" : "front",
+      "fullbright" : true,
+      "timeToLive" : 0.01
+    }
+  }
+  

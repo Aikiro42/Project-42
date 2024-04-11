@@ -1,0 +1,18 @@
+{
+    "kind" : "project42slashdash",
+    "definition" : {
+      "type" : "textured",
+      "image" : "/particles/project42slashdash/project42slashdash.png",
+      "size" : 1,
+      "light" : [32, 0, 0],
+      "position" : [0, 0],
+      "destructionAction" : "fade",
+      "destructionTime" : 0.05,
+      "fade" : 0.05,
+      "layer" : "back",
+      "fullbright" : true,
+      "timeToLive" : 0.01,
+      "flippable" : true
+    }
+}
+  

@@ -1,0 +1,268 @@
+{
+  
+  "animationParts" : { },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts":{
+        "swoosh":{
+          "partStates":{
+            "swoosh":{
+              "fullfatedslash": {
+                "properties": {
+                  "damageArea": [
+                      [2, -3.25],
+                      [-1, -3.25],
+                      [-3, -2.5],
+                      [-5, -1.6],
+                      [-7, -0.3],
+                      [-7, 0.75],
+                      [-6, 1.6],
+                      [-4, 2.1],
+                      [-2, 2.5],
+                      [2, 2.75],
+                      [4, 2.5],
+                      [7, 1.75],
+                      [5, 1.25],
+                      [3, 1.15],
+                      [0, 0.9],
+                      [-2, 0.3],
+                      [-3.5, -0.3],
+                      [-3.5, -1],
+                      [-1.5, -2.25],
+                      [2, -3.25]
+                  ],
+                  "image": "/items/active/weapons/melee/broadsword/project42swoosh/horizontalslash.png:<frame>",
+                  "offset": [-1.75, -1.25]
+                }
+              },
+              "fatedslash":{
+                "properties": {
+                  "damageArea": [
+                    [2, 3.25],
+                    [-1, 3.25],
+                    [-3, 2.5],
+                    [-5, 1.6],
+                    [-7, 0.3],
+                    [-7, -0.75],
+                    [-6, -1.6],
+                    [-4, -2.1],
+                    [-2, -2.5],
+                    [2, -2.75],
+                    [4, -2.5],
+                    [7, -1.75],
+                    [5, -1.25],
+                    [3, -1.15],
+                    [0, -0.9],
+                    [-2, -0.3],
+                    [-3.5, 0.3],
+                    [-3.5, 1],
+                    [-1.5, 2.25],
+                    [2, 3.25]
+                  ],
+                  "offset": [-1.75, 2.25],
+                  "image": "/items/active/weapons/melee/broadsword/project42swoosh/horizontalslash.png:<frame>?flipy"
+                }
+              }
+            }
+          }
+        }
+      },
+      "stateTypes" : {
+        "bladeCharge" : {
+          "default" : "idle",
+          "states" : {
+            "idle" : { },
+            "charge" : {
+              "cycle" : 0,
+              "mode" : "transition",
+              "transition" : "full",
+              "properties" : {
+                "persistentSound" : "",
+                "persistentSoundStopTime" : 0.25
+              }
+            },
+            "full" : {
+              "mode" : "loop",
+              "properties" : {
+                "persistentSound" : "",
+                "immediateSound" : ""
+              }
+            }
+          }
+        },
+        "swoosh":{
+					"states":{
+            "fullfatedslash" : {
+							"frames" : 3,
+							"cycle" : 0.1,
+							"mode" : "transition",
+							"transition" : "idle"
+						},
+						"fatedslash" : {
+							"frames" : 3,
+							"cycle" : 0.1,
+							"mode" : "transition",
+							"transition" : "idle"
+						}
+					}
+				}
+      }
+    },
+    "sounds" : {
+      "fatedSlashReady" : [ "/sfx/melee/project42/fatedslash_ready.ogg" ],
+      "fatedSlashWindup" : [ "/sfx/projectiles/zone_push_loop.ogg" ],
+      "fatedSlashCharged" : [ "/sfx/melee/project42/fatedslash_charged.ogg" ],
+      "fatedSlashChannel": [ "/sfx/melee/project42/fatedslash_channel.ogg" ],
+      "fatedSlashFullCharged" : [ "/sfx/melee/project42/fatedslash_fullcharged.ogg" ],
+      "fatedSlashDash" : [ "/sfx/melee/project42/fatedslash_dash.ogg" ],
+      "fullFatedSlashDash": [ "/sfx/melee/project42/fatedslash_fulldash.ogg" ],
+      "fatedSlashSlash" : [ "/sfx/melee/project42/project42_slash1.ogg", "/sfx/melee/project42/project42_slash2.ogg" ]
+    },
+    "particleEmitters" : {
+      "bladeCharge" : {
+        "active" : false,
+        "transformationGroups" : ["weapon"],
+        "emissionRate" : 50,
+        "offsetRegion" : [-0.5, 1.5, 0.5, 4.0],
+        "particles" : [
+          { "particle" : "project42particle1"},
+          { "particle" : "project42particle2"},
+          { "particle" : "project42particle1"},
+          { "particle" : "project42particle2"}
+        ]
+      }
+    }
+  },
+
+  "ability" : {
+
+    "name" : "Fated Slash",
+    "type" : "fatedslash",
+    "scripts" : ["/items/active/weapons/melee/abilities/broadsword/fatedslash/fatedslash.lua"],
+    "class" : "FatedSlash",
+
+    "energyUsageRate": 0.2,
+    "fullEnergyUsageRate": 0.5,
+    "channelEnergyUsageRate": 0.025,
+
+    "maxIndicatorLineThickness": 2,
+    "minIndicatorLineThickness": 0.5,
+    "indicatorLineShrinkFactor": 2,
+    "indicatorImage": "/items/active/weapons/melee/abilities/broadsword/fatedslash/fatedslashindicator.png?brightness=100",
+    "indicatorColor": [200,100,100],
+    "indicatorColorCharged": [255,50,50],
+    "indicatorColorBad": [125,125,125],
+    
+    "chargeAudioOffset": 0,
+
+    "fullChargeDamageFactor": 3,
+    "fullChargeAudioOffset": 0.95,
+    
+    "cooldownTime" : 0.05,
+    "offCooldownAudioOffset": 0,
+
+    "lifestealRate": 0.025,
+
+    "channelVelocityFactor": 0.075,
+    "channelVelocityControlForce": 500,
+
+    "energyDamageScaling": 0.075,
+    "damageConfig" : {
+      "damageSourceKind" : "broadsword",
+      "damageType": "IgnoresDef",
+      "statusEffects" : [ ],
+      "baseDamage" : 10,
+      "knockback" : 1,
+      "knockbackMode" : "facing",
+      "timeoutGroup" : "alt",
+      "timeout" : 0.1
+    },
+
+    "chargedBorder" : "DD000099",
+    "chargedBorderThickness": 3,
+    "fullChargedBorder" : "FF0000BB",
+    "fullChargedBorderThickness": 1,
+
+    "dashTravelTime": 0.15,
+    "dashProjectileType": "fatedslashdashproj",
+
+    "slashProjectileType": "fatedslashflurry",
+    "slashProjectileParameters": {
+      "power": 10
+    },
+
+    "stances" : {
+
+      "windup" : {
+        "allowRotate": false,
+        "allowFlip": true,
+        "weaponRotation": -220,
+        "armRotation": -45,
+        "twoHanded": true,
+        "aimAngle": 0,
+        "duration": 0
+      },
+      "charged" : {
+        "allowRotate": false,
+        "allowFlip": true,
+        "weaponRotation": -220,
+        "armRotation": -45,
+        "twoHanded": true,
+        "aimAngle": 0,
+        "duration": 1
+      },
+      "fullcharged" : {
+        "allowRotate": false,
+        "allowFlip": true,
+        "weaponRotation": -220,
+        "armRotation": -45,
+        "twoHanded": true,
+        "aimAngle": 0
+      },
+
+      "fatedpreslash": {
+        "allowRotate": true,
+        "allowFlip": true,
+        "duration": 0.001
+      },
+      "fatedslash" : {
+        "allowRotate": false,
+        "allowFlip": false,
+        "twoHanded": false,
+        "weaponRotation": -75,
+        "armRotation": -190,
+        "duration": 0.1
+      },
+      
+      "fullfatedfire": {
+        "allowRotate": true,
+        "allowFlip": true,
+        "weaponRotation": -235,
+        "armRotation": 55,
+        "weaponAngularVelocity": 2050,
+        "armAngularVelocity": 50,
+        "twoHanded": true,
+        "duration": 0.3
+      },
+      "fullfatedpreslash": {
+        "allowRotate": true,
+        "allowFlip": true,
+        "weaponRotation": 20,
+        "armRotation": 70,
+        "weaponAngularVelocity": 250,
+        "armAngularVelocity": -700,
+        "twoHanded": true,
+        "duration": 0.1
+      },
+      "fullfatedslash": {
+        "allowRotate": true,
+        "allowFlip": true,
+        "twoHanded": false,
+        "weaponRotation": -160,
+        "armRotation": -120,
+        "duration": 0.1
+      }
+
+    }
+  }
+}

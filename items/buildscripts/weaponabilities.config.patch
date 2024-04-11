@@ -1,0 +1,12 @@
+[
+    {
+        "op": "add",
+        "path": "/fatedslash",
+        "value": "/items/active/weapons/melee/abilities/broadsword/fatedslash/fatedslash.weaponability"
+    },
+    {
+        "op": "add",
+        "path": "/project42combo",
+        "value": "/items/active/weapons/melee/abilities/broadsword/project42combo.weaponability"
+    }
+]
