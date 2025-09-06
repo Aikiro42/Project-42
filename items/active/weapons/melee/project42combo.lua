@@ -48,6 +48,8 @@ local baseStepDamage = {}
 local stanceFlipConfig = {}
 local parriedProj = false
 
+local parryPolyTimer = 0
+
 function Project42Combo:init()
 
   -- reset stuff
@@ -158,12 +160,16 @@ function Project42Combo:init()
     end
   end
 
+  self.parryTimer = config.getParameter("parryTimer", 0.2)
+
 end
 
 -- Ticks on every update regardless if this is the active ability
 function Project42Combo:update(dt, fireMode, shiftHeld)
 
   WeaponAbility.update(self, dt, fireMode, shiftHeld)
+
+  parryPolyTimer = math.max(0, parryPolyTimer - dt)
 
   -- blade appearance stuff
   if self.weapon.currentAbility then
@@ -325,6 +331,7 @@ function Project42Combo:windup()
   end
 
   self.edgeTriggerTimer = 0
+  parryPolyTimer = self.parryTimer
 
   if stance.hold then
     while self.fireMode == (self.activatingFireMode or self.abilitySlot) do
@@ -929,8 +936,14 @@ function unparry()
   activeItem.setShieldPolys({})
 end
 
+-- FIXME: what value should this return? The function's return value isn't used at all.
 function parryUpdate(parryListener, parryPoly, armRotation, aimAngle, offset, queryRadius, queryPosition, centerOnPlayer, shieldHealth)
-
+  
+  if parryPolyTimer <= 0 then
+    unparry()
+    return true
+  end
+  
   -- local offset = offset or 0
   -- local queryRadius = queryRadius or 3.5625
   -- local queryPosition = queryPosition or vec2.add(mcontroller.position(), activeItem.handPosition())
