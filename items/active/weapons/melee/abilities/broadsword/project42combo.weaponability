@@ -25,7 +25,7 @@
     "comboSpeedFactor": 0.17,
     "edgeTriggerGrace": 0.5,
 
-    "parryTimer": 0.2, // sekiro parry frames is 12 frames / 60 fps
+    "parryTimer": 0.05, // sekiro parry frames is 12 frames / 60 fps
 
     "fireTime": 0.83,
     "baseDps": 10.5,

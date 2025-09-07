@@ -160,7 +160,7 @@ function Project42Combo:init()
     end
   end
 
-  self.parryTimer = config.getParameter("parryTimer", 0.2)
+  self.parryTimer = self.parryTimer or 0.2
 
 end
 
@@ -939,7 +939,7 @@ end
 -- FIXME: what value should this return? The function's return value isn't used at all.
 function parryUpdate(parryListener, parryPoly, armRotation, aimAngle, offset, queryRadius, queryPosition, centerOnPlayer, shieldHealth)
   
-  if parryPolyTimer <= 0 then
+  if (not perfectParryTriggered) and parryPolyTimer <= 0 then
     unparry()
     return true
   end
